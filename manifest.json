@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Deprocrastinator",
+    "version": "0.1.1",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"]
+      }
+    ],
+    "icons": { "48": "logo.png", "128": "logo.png" },
+    "browser_action": {
+      "default_popup": "Popup.html",
+      "default_title": "Procrastination Blocker"
+    },
+    "permissions": [
+      "https://www.youtube.com/*",
+      "https://www.facebook.com/*",
+      "https://www.netflix.com/*",
+      "https://www.instagram.com/*",
+      "https://web.whatsapp.com/*",
+      "https://www.primevideo.com/*",
+      "https://www.spotify.com/*",
+      "https://www.disneyhotstar.com/*",
+      "https://www.primevideo.in/*"
+    ]
+  }
